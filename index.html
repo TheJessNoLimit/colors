@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="colors" id="colors"></div>
+    <br>
+    <div class="c-input">
+        <button style="background-color: red;" onclick="changeCol(`red`)">Красный</button>
+        <button style="background-color: green;" onclick="changeCol(`green`)">Зеленый</button>
+        <button style="background-color: blue;" onclick="changeCol(`blue`)">Синий</button>
+        <button style="background-color: yellow;" onclick="changeCol(`yellow`)">Желтый</button>
+        <br>
+        <button style="background-color: orange;" onclick="changeCol(`orange`)">Оранжевый</button>
+        <button style="background-color: royalblue;" onclick="changeCol(`royalblue`)">Голубой</button>
+        <button style="background-color: black;" onclick="changeCol(`white`)">Черный</button>
+        <button style="background-color: brown;" onclick="changeCol(`brown`)">Коричневый</button>
+        <br>
+        <button style="background-color: white; color: black;" onclick="changeCol(`white`)">Белый</button>
+        <button style="background-color: violet;" onclick="changeCol(`violet`)">Фиолетовый</button>
+        <button style="background-color: darkgreen;" onclick="changeCol(`darkgreen`)">Темно-зеленый</button>
+        <button style="background-color: maroon;" onclick="changeCol(`maroon`)">Бордовый</button>
+        <br>
+        <div class="custom">
+            <button class="b-color" id="b-color"  style="background-color: gray; width: 18.9%;" onclick="dq()">Свой цвет</button>
+            <button class="b-color" id="b-color1" style="background-color: gray; width: 38.9%;">Ввод цвета: <input type="color" id="colorWell" style="width: 50%;"></button>
+        </div>
+        <br>
+        <button class="clear-btn" style="color: black;" onclick="changeCol(`white`)">Очистить</button>
+    </div>
+</body>
+</html>
